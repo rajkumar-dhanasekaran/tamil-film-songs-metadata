@@ -1,0 +1,981 @@
+{
+  "schema_version": 1,
+  "description": "Canonical English/Tamil name dictionary for Tamil film music singers, composers, and lyricists. Same schema music-metadata-toolkit's --authority flag expects.",
+  "entities": [
+    {
+      "id": "person-a-r-rahman",
+      "roles": [
+        "composer",
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "A. R. Rahman",
+        "ta": "ஏ. ஆர். ரகுமான்"
+      },
+      "known_variants": [
+        "A. R. Rahman",
+        "A.R.Rahman"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/A._R._Rahman",
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
+        "https://ta.wikipedia.org/wiki/ஏ._ஆர்._ரகுமான்"
+      ],
+      "notes": "Tamil sources also show orthographic variants in running text; retain evidence before final approval."
+    },
+    {
+      "id": "person-andrea-jeremiah",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Andrea Jeremiah",
+        "ta": "ஆண்ட்ரியா ஜெரெமையா"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-anitha-karthikeyan",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Anitha Karthikeyan",
+        "ta": "அனிதா கார்த்திகேயன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-bombay-jayashri",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Bombay Jayashri",
+        "ta": "பாம்பே ஜெயஸ்ரீ"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-c-s-amudhan",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "C. S. Amudhan",
+        "ta": "சி. எஸ். அமுதன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-chinmayi",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Chinmayi",
+        "ta": "சின்மயி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-d-sathyaprakash",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "D. Sathyaprakash",
+        "ta": "டி. சத்தியபிரகாஷ்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ]
+    },
+    {
+      "id": "person-devan-ekambaram",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Devan Ekambaram",
+        "ta": "தேவன் ஏகாம்பரம்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-gangai-amaran",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Gangai Amaran",
+        "ta": "கங்கை அமரன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-ghibran",
+      "roles": [
+        "composer"
+      ],
+      "preferred_names": {
+        "en": "Ghibran",
+        "ta": "ஜிப்ரான்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-haricharan",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Haricharan",
+        "ta": "ஹரிச்சரண்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740"
+      ]
+    },
+    {
+      "id": "person-harini",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Harini",
+        "ta": "ஹரிணி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-harish-raghavendra",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Harish Raghavendra",
+        "ta": "ஹரிஷ் ராகவேந்திரா"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-harris-jayaraj",
+      "roles": [
+        "composer"
+      ],
+      "preferred_names": {
+        "en": "Harris Jayaraj",
+        "ta": "ஹாரிஸ் ஜயராஜ்"
+      },
+      "known_variants": [
+        "Harris Jayaraj"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harris_Jayaraj",
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://ta.wikipedia.org/wiki/ஹாரிஸ்_ஜயராஜ்",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ],
+      "notes": "Some Tamil publications use ஜெயராஜ்; the Tamil Wikipedia title uses ஜயராஜ். Resolve through stronger first-party evidence before approval."
+    },
+    {
+      "id": "person-ilaiyaraaja",
+      "roles": [
+        "composer",
+        "lyricist",
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Ilaiyaraaja",
+        "ta": "இளையராஜா"
+      },
+      "known_variants": [
+        "Ilaiyaraaja",
+        "Ilayaraja"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ilaiyaraaja",
+        "https://en.wikipedia.org/wiki/Kavikkuyil",
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://ta.wikipedia.org/wiki/இளையராஜா",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740",
+        "https://www.saregama.com/album/kavikkuyil_13149",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilpaa.com/kavikkuyil-songs-lyrics",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html",
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ],
+      "notes": "Role is recording-specific. Do not retain as Artist unless a source confirms singing on that song."
+    },
+    {
+      "id": "person-jayamoorthy",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Jayamoorthy",
+        "ta": "ஜெயமூர்த்தி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-k-s-chithra",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "K. S. Chithra",
+        "ta": "கே. எஸ். சித்ரா"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)"
+      ]
+    },
+    {
+      "id": "person-kannadasan",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Kannadasan",
+        "ta": "கண்ணதாசன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paava_Mannippu",
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://www.saregama.com/album/paava-mannippu_102172",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-karthik",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Karthik",
+        "ta": "கார்த்திக்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-karthik-netha",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Karthik Netha",
+        "ta": "கார்த்திக் நேத்தா"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-kavitha-gopi",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Kavitha Gopi",
+        "ta": "கவிதா கோபி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ]
+    },
+    {
+      "id": "person-m-g-vallabhan",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "M. G. Vallabhan",
+        "ta": "எம். ஜி. வல்லபன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-manikkavasagar-thiruvasagam",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Manikkavasagar (Thiruvasagam)",
+        "ta": "மாணிக்கவாசகர் (திருவாசகம்)"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ]
+    },
+    {
+      "id": "person-minmini",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Minmini",
+        "ta": "மின்மினி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)"
+      ]
+    },
+    {
+      "id": "person-mohan-rajan",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Mohan Rajan",
+        "ta": "மோகன் ராஜன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ]
+    },
+    {
+      "id": "person-mukesh",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Mukesh",
+        "ta": "முகேஷ்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-muthulingam",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Muthulingam",
+        "ta": "முத்துலிங்கம்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-na-muthukumar",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Na. Muthukumar",
+        "ta": "நா. முத்துக்குமார்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/"
+      ]
+    },
+    {
+      "id": "person-neha-bhasin",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Neha Bhasin",
+        "ta": "நேஹா பாசின்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-p-b-sreenivas",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "P. B. Sreenivas",
+        "ta": "பி. பி. ஸ்ரீனிவாஸ்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paava_Mannippu",
+        "https://www.saregama.com/album/paava-mannippu_102172"
+      ]
+    },
+    {
+      "id": "person-p-unnikrishnan",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "P. Unnikrishnan",
+        "ta": "பி. உன்னிகிருஷ்ணன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/"
+      ]
+    },
+    {
+      "id": "person-palani-bharathi",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Palani Bharathi",
+        "ta": "பழனி பாரதி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/"
+      ]
+    },
+    {
+      "id": "person-panchu-arunachalam",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Panchu Arunachalam",
+        "ta": "பஞ்சு அருணாசலம்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kavikkuyil",
+        "https://www.saregama.com/album/kavikkuyil_13149",
+        "https://www.tamilpaa.com/kavikkuyil-songs-lyrics"
+      ]
+    },
+    {
+      "id": "person-priyadarshini",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Priyadarshini",
+        "ta": "பிரியதர்ஷினி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740",
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ]
+    },
+    {
+      "id": "person-ram",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Ram",
+        "ta": "ராம்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-ramya-nsk",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Ramya NSK",
+        "ta": "ரம்யா என். எஸ். கே."
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740"
+      ]
+    },
+    {
+      "id": "person-ranjith",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Ranjith",
+        "ta": "ரஞ்சித்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/"
+      ]
+    },
+    {
+      "id": "person-rita",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Rita",
+        "ta": "ரீட்டா"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-roop-kumar-rathod",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Roop Kumar Rathod",
+        "ta": "ரூப் குமார் ரத்தோட்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-s-janaki",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "S. Janaki",
+        "ta": "எஸ். ஜானகி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kavikkuyil",
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://www.saregama.com/album/kavikkuyil_13149",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilpaa.com/kavikkuyil-songs-lyrics",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-s-p-balasubrahmanyam",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "S. P. Balasubrahmanyam",
+        "ta": "எஸ். பி. பாலசுப்பிரமணியம்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)"
+      ]
+    },
+    {
+      "id": "person-s-p-sailaja",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "S. P. Sailaja",
+        "ta": "எஸ். பி. சைலஜா"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Uthiripookkal",
+        "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
+        "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-senthil-dass",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Senthil Dass",
+        "ta": "செந்தில்தாஸ்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-shankar-mahadevan",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Shankar Mahadevan",
+        "ta": "சங்கர் மகாதேவன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-siddharth",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Siddharth",
+        "ta": "சித்தார்த்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-sruthi-s",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Sruthi S",
+        "ta": "ஸ்ருதி எஸ்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-sujatha-mohan",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Sujatha Mohan",
+        "ta": "சுஜாதா மோகன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kavikkuyil",
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
+        "https://www.saregama.com/album/kavikkuyil_13149",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/",
+        "https://www.tamilpaa.com/kavikkuyil-songs-lyrics"
+      ]
+    },
+    {
+      "id": "person-surmukhi-raman",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Surmukhi Raman",
+        "ta": "சுர்முகி ராமன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.youtube.com/watch?v=eXfaWeFE3jM"
+      ]
+    },
+    {
+      "id": "person-suvi",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Suvi",
+        "ta": "சுவி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-thamarai",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Thamarai",
+        "ta": "தாமரை"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-timmy",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Timmy",
+        "ta": "டிம்மி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-tippu",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Tippu",
+        "ta": "திப்பு"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-unni-krishnan",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Unni Krishnan",
+        "ta": "உன்னிகிருஷ்ணன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-unni-menon",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Unni Menon",
+        "ta": "உன்னி மேனன்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)"
+      ]
+    },
+    {
+      "id": "person-vaali",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Vaali",
+        "ta": "வாலி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
+        "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-vairamuthu",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Vairamuthu",
+        "ta": "வைரமுத்து"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-ve-ramasamy",
+      "roles": [
+        "lyricist"
+      ],
+      "preferred_names": {
+        "en": "Ve. Ramasamy",
+        "ta": "வே. ராமசாமி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vaagai_Sooda_Vaa_(soundtrack)",
+        "https://www.moviecrow.com/movie/355/vaagai-sooda-vaa/songs"
+      ]
+    },
+    {
+      "id": "person-vijay-yesudas",
+      "roles": [
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Vijay Yesudas",
+        "ta": "விஜய் யேசுதாஸ்"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/"
+      ]
+    },
+    {
+      "id": "person-viswanathan-ramamoorthy",
+      "roles": [
+        "composer"
+      ],
+      "preferred_names": {
+        "en": "Viswanathan–Ramamoorthy",
+        "ta": "விஸ்வநாதன்–ராமமூர்த்தி"
+      },
+      "known_variants": [],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paava_Mannippu",
+        "https://www.saregama.com/album/paava-mannippu_102172"
+      ]
+    },
+    {
+      "id": "person-yuvan-shankar-raja",
+      "roles": [
+        "composer",
+        "lyricist",
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Yuvan Shankar Raja",
+        "ta": "யுவன் சங்கர் ராஜா"
+      },
+      "known_variants": [
+        "Yuvan Sankar Raja",
+        "Yuvan Shankar Raja",
+        "Yuvanshankar Raja"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Megha_(2014_film)",
+        "https://en.wikipedia.org/wiki/Taramani_(film)",
+        "https://en.wikipedia.org/wiki/Yuvan_Shankar_Raja",
+        "https://music.amazon.in/albums/B0CFQWC9GS",
+        "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
+        "https://ta.wikipedia.org/wiki/யுவன்_சங்கர்_ராஜா",
+        "https://www.moviecrow.com/movie/1436/taramani/songs",
+        "https://www.raaga.com/tamil/movie/megha-songs-T0003740",
+        "https://www.tamil2lyrics.com/movie/kaadhal-kondein/"
+      ],
+      "notes": "Role is recording-specific."
+    }
+  ]
+}
