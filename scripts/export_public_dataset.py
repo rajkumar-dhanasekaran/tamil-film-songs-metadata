@@ -59,11 +59,9 @@ NON_TAMIL_ALBUM_COMPOSER_PAIRS = {
     ("Beethoven Music Collection", "Ludwig van Beethoven"),  # Western classical, not a film
     ("Beethoven Music Collection", "Franz Schubert"),        # Western classical, not a film
     ("Love", "John Lennon & Paul McCartney"),              # The Beatles compilation, not a film
-    # Composed entirely by Hamsalekha, an exclusively Kannada-cinema composer; kept out
-    # pending confirmation these aren't Kannada films (or Tamil dubs) mislabeled Tamil.
-    ("Paruva Raagam", "Hamsalekha"),
-    ("Paruva Ragam", "Hamsalekha"),
-    ("Captain Magal", "Hamsalekha"),
+    # Note: Hamsalekha is primarily a Kannada-cinema composer but has also scored Tamil
+    # films (confirmed with the library owner), so his tracks (Paruva Raagam / Paruva
+    # Ragam / Captain Magal) are NOT excluded here.
 }
 
 

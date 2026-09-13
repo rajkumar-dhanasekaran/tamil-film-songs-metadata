@@ -6,7 +6,7 @@ Wikipedia, Wikidata, and manual research, with a source URL for every credit tha
 verified rather than guessed.
 
 This is a byproduct of standardizing one personal music library, not a scrape of "all
-Tamil film music": it covers the Tamil-language tracks that library contained (3,030 of
+Tamil film music": it covers the Tamil-language tracks that library contained (3,038 of
 them), spanning films from 1961 to the mid-2020s. The source library was scanned as a
 whole and picked up a handful of Telugu and Western tracks along the way; those are
 filtered out (see "What's not included" and `scripts/export_public_dataset.py`) so this
@@ -51,7 +51,7 @@ form isn't known yet, the column falls back to English alone.
 - **`low`** — largely unresolved. Present in the dataset for completeness (so this
   library's actual coverage is honestly represented), not because the data is reliable.
 
-As of the last export: 73 rows high-confidence, 2,449 medium, 508 low (out of 3,030).
+As of the last export: 73 rows high-confidence, 2,451 medium, 514 low (out of 3,038).
 Treat `medium` and `low` rows as leads to verify, not settled facts.
 
 ## What's not included, on purpose
@@ -68,10 +68,9 @@ out of every file here:
 - Non-Tamil tracks: the source library also held some Telugu film tracks (10 tagged
   `genre=Telugu`, plus a few more — *Arya*, *Athadu*, *Baahubali 1*, *Magadheera*,
   *Varsham*, *Vedam* — mistakenly tagged `genre=Tamil`) and a couple of Western
-  classical/pop tracks (Beethoven, The Beatles) that had the same wrong genre tag. 53
-  tracks were excluded this way; the exact list — including a few genuinely ambiguous
-  ones — is in `NON_TAMIL_ALBUM_COMPOSER_PAIRS` at the top of
-  `scripts/export_public_dataset.py`, in the open.
+  classical/pop tracks (Beethoven, The Beatles) that had the same wrong genre tag. 45
+  tracks were excluded this way; the exact list is in `NON_TAMIL_ALBUM_COMPOSER_PAIRS`
+  at the top of `scripts/export_public_dataset.py`, in the open.
 
 If you want to see exactly how the export was scrubbed, `scripts/export_public_dataset.py`
 is the (small, readable) script that produced these files.
@@ -108,5 +107,5 @@ required (though a link back is always appreciated).
 
 ---
 
-**Last updated:** 2026-09-13 · 3,030 songs · see [CHANGELOG.md](CHANGELOG.md) for what
+**Last updated:** 2026-09-13 · 3,038 songs · see [CHANGELOG.md](CHANGELOG.md) for what
 changed between exports.
