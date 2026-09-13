@@ -17,3 +17,8 @@ necessarily publish dates.
   `needs_review` confidence label (12 rows) mapped to `low`, and duplicate `content_type`
   labels (`karaoke` / `instrumental_score`) merged into their canonical form.
 - Repository renamed from `tamil-film-song-metadata` to `tamil-film-songs-metadata`.
+- Follow-up pass after publishing found two more issues, now fixed (3,035 songs):
+  excluded 3 tracks under "Swami Vivekananda" that turned out to be his English-language
+  1893 speeches, not Tamil songs; and stripped download-site watermarks (e.g. "- some
+  site.blogspot.com", or a bare site name) that had ended up in the artist tag on 8
+  tracks, via a new `clean_names()` step in the export script.

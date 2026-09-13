@@ -17,9 +17,13 @@ Deliberately excluded from the export, by design (see README "What's not include
   - internal workflow fields (review_status jargon, audio_file_modified, export-mode
     policy fields, batch/file provenance tokens) that mean nothing outside this project
   - anything that isn't a plain http(s) URL from the "evidence" column
-  - any track identified as not actually Tamil-language (see `is_non_tamil` below) —
-    the source library was scanned as a whole and picked up some Telugu and Western
-    tracks along the way; this dataset promises Tamil film songs only.
+  - any track identified as not actually Tamil-language, or not a song at all (see
+    `is_excluded` below) — the source library was scanned as a whole and picked up some
+    Telugu tracks, Western classical/pop tracks, and even a few English spoken-word
+    recordings along the way; this dataset promises Tamil film songs only.
+  - download-site watermarks (e.g. "Some Singer - moviegalleri.blogspot.com") that ended
+    up sitting in a handful of the source library's own artist tags, stripped from every
+    name field by `clean_names` before anything is written out.
 
 Run this from a checkout of both repos as siblings, e.g.:
     python scripts/export_public_dataset.py \
@@ -64,11 +68,36 @@ NON_TAMIL_ALBUM_COMPOSER_PAIRS = {
     # Ragam / Captain Magal) are NOT excluded here.
 }
 
+# Not a language problem — these aren't songs at all. "Swami Vivekananda" is 3 tracks of
+# his famous 1893 English-language addresses (Welcome Address, Why We Disagree, Paper on
+# Hinduism), sitting in the library with genre mistagged "Tamil".
+NON_SONG_ALBUMS = {"Swami Vivekananda"}
 
-def is_non_tamil(row):
+# Watermarks a couple of download sites left behind in the source library's own artist
+# tags, e.g. "Yuvan Shankar Raja - moviegalleri.blogspot.com" or a bare "TamilMusica.Com"
+# standing in for an unknown singer. Stripped from every name field, not just "artist",
+# in case the same pattern shows up elsewhere on a future re-run.
+WATERMARK_SUFFIX_RE = re.compile(r"\s*-\s*\S+\.(?:com|net|org|in)\s*$", re.I)
+WATERMARK_STANDALONE = {"tamilmusica.com", "moviegalleri.blogspot.com"}
+
+
+def is_excluded(row):
     if row["current_genre"] in NON_TAMIL_GENRES:
         return True
+    if row["current_album"] in NON_SONG_ALBUMS:
+        return True
     return (row["current_album"], row["current_composer"]) in NON_TAMIL_ALBUM_COMPOSER_PAIRS
+
+
+def clean_names(value):
+    """Strip download-site watermarks out of a ';'-delimited name field (also safe to run
+    on a bilingual-combined string, since the watermark always trails the last name)."""
+    parts = []
+    for part in (value or "").split(";"):
+        part = WATERMARK_SUFFIX_RE.sub("", part).strip()
+        if part and part.lower() not in WATERMARK_STANDALONE:
+            parts.append(part)
+    return "; ".join(parts)
 
 SONG_COLUMNS = [
     "film_en", "film_ta", "film_bilingual",
@@ -89,29 +118,29 @@ def export_songs(proposals_csv, output_path):
     with proposals_csv.open(encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
 
-    excluded = [row for row in rows if is_non_tamil(row)]
-    rows = [row for row in rows if not is_non_tamil(row)]
+    excluded = [row for row in rows if is_excluded(row)]
+    rows = [row for row in rows if not is_excluded(row)]
 
     output_rows = []
     for row in rows:
         output_rows.append({
-            "film_en": row["album_english"],
-            "film_ta": row["album_tamil"],
-            "film_bilingual": row["album_bilingual"],
+            "film_en": clean_names(row["album_english"]),
+            "film_ta": clean_names(row["album_tamil"]),
+            "film_bilingual": clean_names(row["album_bilingual"]),
             "song_title_en": row["title_english"],
             "song_title_ta": row["title_tamil"],
             "song_title_bilingual": row["title_bilingual"],
-            "composer_en": row["composer_english"],
-            "composer_ta": row["composer_tamil"],
-            "composer_bilingual": row["composer_bilingual"],
-            "singers_en": row["artist_english"],
-            "singers_ta": row["artist_tamil"],
-            "singers_bilingual": row["artist_bilingual"],
-            "lyricists_en": row["lyricist_english"],
-            "lyricists_ta": row["lyricist_tamil"],
-            "lyricists_bilingual": row["lyricist_bilingual"],
-            "cast_en": row["grouping_cast_english"],
-            "cast_ta": row["grouping_cast_tamil"],
+            "composer_en": clean_names(row["composer_english"]),
+            "composer_ta": clean_names(row["composer_tamil"]),
+            "composer_bilingual": clean_names(row["composer_bilingual"]),
+            "singers_en": clean_names(row["artist_english"]),
+            "singers_ta": clean_names(row["artist_tamil"]),
+            "singers_bilingual": clean_names(row["artist_bilingual"]),
+            "lyricists_en": clean_names(row["lyricist_english"]),
+            "lyricists_ta": clean_names(row["lyricist_tamil"]),
+            "lyricists_bilingual": clean_names(row["lyricist_bilingual"]),
+            "cast_en": clean_names(row["grouping_cast_english"]),
+            "cast_ta": clean_names(row["grouping_cast_tamil"]),
             "content_type": CONTENT_TYPE_ALIASES.get(row["content_type"], row["content_type"]),
             "year": row["film_year_or_date"] or row["soundtrack_year_or_date"],
             # A handful of source rows (~12) carried a non-standard workflow label
