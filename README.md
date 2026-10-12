@@ -6,13 +6,13 @@ Wikipedia, Wikidata, and manual research, with a source URL for every credit tha
 verified rather than guessed.
 
 This is a byproduct of standardizing one personal music library, not a scrape of "all
-Tamil film music": it covers the Tamil-language tracks that library contained (3,035 of
+Tamil film music": it covers the Tamil-language tracks that library contained (3,033 of
 them), spanning films from 1961 to the mid-2020s. The source library was scanned as a
-whole and picked up a handful of Telugu tracks, Western classical/pop tracks, and even a
-few English spoken-word recordings along the way; those are filtered out (see "What's not
-included" and `scripts/export_public_dataset.py`) so this stays a Tamil-only, songs-only
-dataset. It is not exhaustive, but every row that carries a source URL has been checked
-against that source, not auto-generated.
+whole and picked up a handful of Telugu tracks, Western classical/pop tracks, incidental
+background score cues, and even a few English spoken-word recordings along the way; those
+are filtered out (see "What's not included" and `scripts/export_public_dataset.py`) so this
+stays a Tamil-only, songs-only dataset. It is not exhaustive, but every row that carries a
+source URL has been checked against that source, not auto-generated.
 
 ## Files
 
@@ -50,7 +50,7 @@ form isn't known yet, the column falls back to English alone.
 - **`low`** — largely unresolved. Present in the dataset for completeness (so this
   library's actual coverage is honestly represented), not because the data is reliable.
 
-As of the latest export: 1,635 rows high-confidence, 1,353 medium, 47 low (out of 3,035).
+As of the latest export: 1,633 rows high-confidence, 1,353 medium, 47 low (out of 3,033).
 Treat `medium` and `low` rows as leads to verify, not settled facts.
 
 ## What's not included, on purpose
@@ -68,11 +68,12 @@ out of every file here:
   almost everything, but that tag turned out not to be fully reliable — it correctly
   flagged 10 Telugu tracks, but 33 more tracks tagged `genre=Tamil` were actually Telugu
   films (*Arya*, *Athadu*, *Baahubali 1*, *Magadheera*, *Varsham*, *Vedam*), Western
-  classical/pop (Beethoven, The Beatles), or in one case (*Swami Vivekananda*, 3 tracks)
-  English-language spoken-word recordings, not songs at all. 48 tracks were excluded in
-  total; the exact list is in `NON_TAMIL_ALBUM_COMPOSER_PAIRS` / `NON_SONG_ALBUMS` at the
-  top of `scripts/export_public_dataset.py`, in the open — each entry was checked
-  individually against what the film/recording actually is, not inferred from the tag.
+  classical/pop (Beethoven, The Beatles), or English-language spoken-word recordings (*Swami
+  Vivekananda*, 3 tracks), or incidental background score cues (2 tracks from *36 Vayadhinile*)
+  that cannot be mapped to songs. 50 tracks were excluded in total; the exact list and
+  rules are in `is_excluded()` at the top of `scripts/export_public_dataset.py`, in the
+  open — each entry was checked individually against what the recording actually is, not
+  inferred from the tag.
 - Download-site watermarks: a handful of tracks had `"<Singer> - somesite.blogspot.com"`
   or a bare site name sitting in the artist tag in place of (or alongside) a real name.
   `clean_names()` in the export script strips these before anything is published.
@@ -103,5 +104,5 @@ required (though a link back is always appreciated).
 
 ---
 
-**Last updated:** 2026-10-12 · 3,035 songs · see [CHANGELOG.md](CHANGELOG.md) for what
+**Last updated:** 2026-10-12 · 3,033 songs · see [CHANGELOG.md](CHANGELOG.md) for what
 changed between exports.

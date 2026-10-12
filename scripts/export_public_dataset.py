@@ -79,24 +79,32 @@ NON_SONG_ALBUMS = {"Swami Vivekananda"}
 # in case the same pattern shows up elsewhere on a future re-run.
 WATERMARK_SUFFIX_RE = re.compile(r"\s*-\s*\S+\.(?:com|net|org|in)\s*$", re.I)
 WATERMARK_STANDALONE = {"tamilmusica.com", "moviegalleri.blogspot.com"}
+APPLE_MUSIC_BOILERPLATE_RE = re.compile(
+    r"\s*[\(\[]\s*Original\s+(?:Motion\s+Picture\s+)?(?:Soundtrack|Score)\s*[\)\]]",
+    re.I
+)
 
 
 def is_excluded(row):
-    if row["current_genre"] in NON_TAMIL_GENRES:
+    if row.get("current_genre") in NON_TAMIL_GENRES:
         return True
-    if row["current_album"] in NON_SONG_ALBUMS:
+    if row.get("current_album") in NON_SONG_ALBUMS:
         return True
-    return (row["current_album"], row["current_composer"]) in NON_TAMIL_ALBUM_COMPOSER_PAIRS
+    if (row.get("current_album"), row.get("current_composer")) in NON_TAMIL_ALBUM_COMPOSER_PAIRS:
+        return True
+    title = row.get("current_title", "") or row.get("title_english", "")
+    if re.search(r"background\s+score", title, re.I):
+        return True
+    return False
 
 
 def clean_names(value):
-    """Strip download-site watermarks out of a ';'-delimited name field (also safe to run
-    on a bilingual-combined string, since the watermark always trails the last name)."""
+    """Strip download-site watermarks and Apple Music boilerplate suffixes out of a ';'-delimited name field."""
     parts = []
     for part in (value or "").split(";"):
         part = WATERMARK_SUFFIX_RE.sub("", part).strip()
+        part = APPLE_MUSIC_BOILERPLATE_RE.sub("", part).strip()
         if part and part.lower() not in WATERMARK_STANDALONE:
-            parts.append(part)
     return "; ".join(parts)
 
 SONG_COLUMNS = [
@@ -127,9 +135,9 @@ def export_songs(proposals_csv, output_path):
             "film_en": clean_names(row["album_english"]),
             "film_ta": clean_names(row["album_tamil"]),
             "film_bilingual": clean_names(row["album_bilingual"]),
-            "song_title_en": row["title_english"],
-            "song_title_ta": row["title_tamil"],
-            "song_title_bilingual": row["title_bilingual"],
+            "song_title_en": clean_names(re.sub(r"\.(?:mp3|m4a|flac|wav|aac)$", "", row["title_english"], flags=re.I).strip()),
+            "song_title_ta": clean_names(re.sub(r"\.(?:mp3|m4a|flac|wav|aac)$", "", row["title_tamil"], flags=re.I).strip()),
+            "song_title_bilingual": clean_names(re.sub(r"\.(?:mp3|m4a|flac|wav|aac)$", "", row["title_bilingual"], flags=re.I).strip()),
             "composer_en": clean_names(row["composer_english"]),
             "composer_ta": clean_names(row["composer_tamil"]),
             "composer_bilingual": clean_names(row["composer_bilingual"]),
