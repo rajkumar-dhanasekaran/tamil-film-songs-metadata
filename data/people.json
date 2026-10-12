@@ -115,6 +115,23 @@
       ]
     },
     {
+      "id": "person-deva",
+      "roles": [
+        "composer",
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "Deva",
+        "ta": "தேவா"
+      },
+      "known_variants": [
+        "Deva (Music Director)"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deva_(composer)"
+      ]
+    },
+    {
       "id": "person-devan-ekambaram",
       "roles": [
         "singer"
@@ -127,6 +144,26 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Minnale_(soundtrack)",
         "https://www.youtube.com/watch?v=RDzsOlnV7gE"
+      ]
+    },
+    {
+      "id": "person-g-v-prakash-kumar",
+      "roles": [
+        "composer",
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "G. V. Prakash Kumar",
+        "ta": "ஜி. வி. பிரகாஷ் குமார்"
+      },
+      "known_variants": [
+        "G. V. Prakash",
+        "G.V. Prakash",
+        "G.V.Prakash Kumar",
+        "GV Prakash"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/G._V._Prakash_Kumar"
       ]
     },
     {
@@ -363,6 +400,22 @@
         "https://en.wikipedia.org/wiki/Uthiripookkal",
         "https://www.tamil2lyrics.com/movies/uthiri-pookkal/",
         "https://www.tamilthiraiulagam.com/films/1979/uthiripookkal.html"
+      ]
+    },
+    {
+      "id": "person-mani-sharma",
+      "roles": [
+        "composer"
+      ],
+      "preferred_names": {
+        "en": "Mani Sharma",
+        "ta": "மணிசர்மா"
+      },
+      "known_variants": [
+        "Manisharma"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mani_Sharma"
       ]
     },
     {
@@ -734,6 +787,38 @@
       ]
     },
     {
+      "id": "person-sirpi",
+      "roles": [
+        "composer"
+      ],
+      "preferred_names": {
+        "en": "Sirpi",
+        "ta": "சிற்பி"
+      },
+      "known_variants": [
+        "Sirpy"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sirpi_(composer)"
+      ]
+    },
+    {
+      "id": "person-srikanth-deva",
+      "roles": [
+        "composer"
+      ],
+      "preferred_names": {
+        "en": "Srikanth Deva",
+        "ta": "ஸ்ரீகாந்த் தேவா"
+      },
+      "known_variants": [
+        "Srikanthdeva"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Srikanth_Deva"
+      ]
+    },
+    {
       "id": "person-sruthi-s",
       "roles": [
         "singer"
@@ -797,6 +882,27 @@
         "https://music.amazon.in/albums/B0CFQWC9GS",
         "https://music.apple.com/in/album/taramani-original-motion-picture-soundtrack/1702687335",
         "https://www.moviecrow.com/movie/1436/taramani/songs"
+      ]
+    },
+    {
+      "id": "person-t-rajendar",
+      "roles": [
+        "composer",
+        "lyricist",
+        "singer"
+      ],
+      "preferred_names": {
+        "en": "T. Rajendar",
+        "ta": "டி. ராஜேந்தர்"
+      },
+      "known_variants": [
+        "T. Rajender",
+        "T.Rajendar",
+        "TR",
+        "Vijaya T. Rajendar"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/T._Rajendar"
       ]
     },
     {

@@ -52,7 +52,7 @@ form isn't known yet, the column falls back to English alone.
 - **`low`** — largely unresolved. Present in the dataset for completeness (so this
   library's actual coverage is honestly represented), not because the data is reliable.
 
-As of the last export: 73 rows high-confidence, 2,451 medium, 511 low (out of 3,035).
+As of the latest export: 1,635 rows high-confidence, 1,353 medium, 47 low (out of 3,035).
 Treat `medium` and `low` rows as leads to verify, not settled facts.
 
 ## What's not included, on purpose
@@ -114,5 +114,5 @@ required (though a link back is always appreciated).
 
 ---
 
-**Last updated:** 2026-09-13 · 3,035 songs · see [CHANGELOG.md](CHANGELOG.md) for what
+**Last updated:** 2026-10-12 · 3,035 songs · see [CHANGELOG.md](CHANGELOG.md) for what
 changed between exports.
