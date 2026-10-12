@@ -8,8 +8,8 @@ public-safe files into this repo's `data/` directory:
 
   - data/songs.csv   — one row per track: film/song/people names (EN + TA), year,
                         content type, confidence, and public source URLs only.
-  - data/people.json — canonical singer/composer/lyricist name dictionary, in the same
-                        schema `music-metadata-toolkit`'s `--authority` flag expects.
+  - data/people.json — canonical singer/composer/lyricist name dictionary, mapping
+                        known misspellings and aliases to standard forms.
 
 Deliberately excluded from the export, by design (see README "What's not included"):
   - relative_path / filename / any on-disk path
@@ -187,8 +187,7 @@ def export_people(authority_paths, output_path):
     payload = {
         "schema_version": 1,
         "description": "Canonical English/Tamil name dictionary for Tamil film music singers, "
-                        "composers, and lyricists. Same schema music-metadata-toolkit's "
-                        "--authority flag expects.",
+                       "composers, and lyricists, mapping variant spellings and aliases to standard forms.",
         "entities": [
             {
                 "id": entity["id"],

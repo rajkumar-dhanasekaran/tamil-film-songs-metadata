@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Canonical English/Tamil name dictionary for Tamil film music singers, composers, and lyricists. Same schema music-metadata-toolkit's --authority flag expects.",
+  "description": "Canonical English/Tamil name dictionary for Tamil film music singers, composers, and lyricists, mapping variant spellings and aliases to standard forms.",
   "entities": [
     {
       "id": "person-a-r-rahman",

@@ -18,10 +18,8 @@ against that source, not auto-generated.
 
 - **`data/songs.csv`** — one row per track.
 - **`data/people.json`** — a canonical English/Tamil name dictionary for singers,
-  composers, and lyricists, with known misspellings mapped to the correct spelling and a
-  source for each. This is in the exact format the companion
-  [`music-metadata-toolkit`](../music-metadata-toolkit)'s `--authority` flag expects, so
-  you can point that tool at this file directly.
+  composers, and lyricists, with known misspellings and aliases mapped to the correct spelling
+  and a source for each.
 
 ### `songs.csv` columns
 
@@ -90,15 +88,6 @@ export is auditable and reproducible, not because you need to run it:
 
 ```bash
 python scripts/export_public_dataset.py --source /path/to/source-project --output data
-```
-
-## Using this with music-metadata-toolkit
-
-```bash
-music-metadata propose ./my-project/data/catalog.sqlite3 \
-  --authority /path/to/tamil-film-songs-metadata/data/people.json \
-  --field-pack tamil-english \
-  --output-dir ./my-project/output/proposals
 ```
 
 ## Contributing corrections
